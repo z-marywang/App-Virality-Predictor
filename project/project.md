@@ -52,7 +52,7 @@ successful Google Play Store app using the data we have.
 First, we had to decide between using rating or popularity to rank the
 success of an app. We started by looking at the distribution of rating:
 
-![](project_files/figure-gfm/rating-1.png)<!-- -->
+![](project_files/figure_gfm/rating-1.png)<!-- -->
 
 We also found the top 5 apps by rating:
 
@@ -116,7 +116,7 @@ average number of reviews at around 90,000 reviews. This is followed by
 communication and game apps. The app categories with the least number of
 average reviews were beauty, medical, and events.
 
-![](project_files/figure-gfm/cat-rat-1.png)<!-- -->
+![](project_files/figure_gfm/cat-rat-1.png)<!-- -->
 
 Another factor to explore is content rating. Maybe apps that are meant
 for a broader audience, e.g. a rating of Everyone, would have more users
@@ -129,9 +129,9 @@ than 30,000 so we create a new boxplot that captures that portion of the
 data and excludes in the visualization the outliers above that numnber
 of average reviews.
 
-![](project_files/figure-gfm/box-1.png)<!-- -->
+![](project_files/figure_gfm/box-1.png)<!-- -->
 
-![](project_files/figure-gfm/box2-1.png)<!-- -->
+![](project_files/figure_gfm/box2-1.png)<!-- -->
 
 Apps that have a content rating of Adults only 18+ have a higher median
 of Reviews\_avg, but the other ratings (Everyone, Everyone 10+, Mature
@@ -154,7 +154,7 @@ then looked at what apps were in that content rating.
 There are only 3, so we can mutate the dataset so these apps fall under
 Mature 17+ instead for consistency. Let us see if the box plot changes:
 
-![](project_files/figure-gfm/box3-1.png)<!-- -->
+![](project_files/figure_gfm/box3-1.png)<!-- -->
 
 Now we see that the content rating Everyone 10+ has the highest median
 instead.
@@ -197,7 +197,7 @@ the null distribution, `rev_type`.
 We can visualize this distribution using a histogram, with the sample
 statistic marked with a green vertical line.
 
-![](project_files/figure-gfm/sim-dist-1.png)<!-- -->
+![](project_files/figure_gfm/sim-dist-1.png)<!-- -->
 
 Based on the visualization of the null distribution, the p-value appears
 to be small. But we can directly calculate it as well.
@@ -226,11 +226,11 @@ include the factors we explored above.
 First, we looked at the distribution of Reviews\_avg, our response
 variable.
 
-![](project_files/figure-gfm/distr-response-1.png)<!-- -->
+![](project_files/figure_gfm/distr-response-1.png)<!-- -->
 
-![](project_files/figure-gfm/distr-response-2-1.png)<!-- -->
+![](project_files/figure_gfm/distr-response-2-1.png)<!-- -->
 
-![](project_files/figure-gfm/distr-response-3-1.png)<!-- -->
+![](project_files/figure_gfm/distr-response-3-1.png)<!-- -->
 
 Even after zooming into areas of interest, cutting down the range each
 time, we see that the reviews per app is heavily right-skewed. We
