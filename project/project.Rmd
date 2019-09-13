@@ -34,7 +34,7 @@ nrep <- 500 #number of repetions for simulation
 
 
 ```{r load-data, message=FALSE, warning=FALSE}
-googleplaystore <- read_csv("/cloud/project/data/googleplaystore.csv")
+googleplaystore <- read_csv("App-Virality-Predictor/data/googleplaystore.csv")
 
 #inspired by http://rprogramming.net/rename-columns-in-r/
 names(googleplaystore) <- c("App", "Category", "Rating", "Reviews",
